@@ -14,7 +14,8 @@ Many of my styles are influenced by patterns from Angular (from [John Papa's Ang
 
 ## Table of Contents
 1. [Single Responsibility](#single-responsibility)
-2. 
+2. [Modules](#modules)
+3. 
 
 
 ## Single Responsibility
@@ -38,7 +39,17 @@ Many of my styles are influenced by patterns from Angular (from [John Papa's Ang
 
 ### Avoid Naming Collisions
 
-- Use unique prefixes
+- Use unique prefixes and then a one-to-two word description of the module
+
+*Why?*: For avoiding namespace collision when using 3rd party polymer elements
+
+*Why?*: Should you plan to publish your module, it will be easier to just use the same name
+
+Example:
+```
+littleqairoes-core      // core components and behaviors to be used in the project
+project-name-components // unique components to be used in the project 
+```
 
 
 ## 
